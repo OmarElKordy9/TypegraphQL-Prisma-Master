@@ -12,7 +12,6 @@ import {
 interface Context {
   prisma: PrismaClient;
 }
-
 async function main() {
   const schema = await buildSchema({
     resolvers: [PostCrudResolver, UserCrudResolver],
